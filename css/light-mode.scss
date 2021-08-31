@@ -1,0 +1,24 @@
+$white: #fff;
+$border-color: rgb(245, 245, 245);
+$border-color-2: rgb(215, 215, 215);
+$border-color-3: rgba(64, 138, 92, 0.2);
+$dark-green: rgb(64, 138, 92);
+$dark-green-hover: rgb(54, 128, 82);
+$dark: rgb(60, 60, 60);
+$dark-hover: rgb(70, 70, 70);
+
+.light-mode {
+  background: $dark;
+
+  .container {
+    border-color: $dark-green;
+
+    li {
+      background: $white;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

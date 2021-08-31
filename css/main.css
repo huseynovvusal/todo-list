@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+.container .top-side .add-todo-side input[type="text"], .container .bottom-side input[type="text"] {
+  width: 100%;
+  outline: none;
+  color: #408a5c;
+}
+
+.container .top-side .add-todo-side input[type="text"], .container .bottom-side input[type="text"], .container .top-side .add-todo-side input, .container .bottom-side .delete-all {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  display: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container {
+  position: relative;
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 1px solid whitesmoke;
+}
+
+@media (max-width: 525px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(64, 138, 92, 0.2);
+}
+
+.container nav a {
+  color: #408a5c;
+  font-size: 1.2rem;
+}
+
+.container nav a i {
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+.container h3 {
+  color: #408a5c;
+  font-size: 1.5rem;
+}
+
+.container .top-side {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(64, 138, 92, 0.2);
+}
+
+.container .top-side .add-todo-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .top-side .add-todo-side input[type="submit"] {
+  background: #408a5c;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.container .top-side .add-todo-side input[type="submit"]:hover {
+  background: #368052;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.container .bottom-side {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .bottom-side .delete-all {
+  text-decoration: none;
+  background: #3c3c3c;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.container .bottom-side .delete-all:hover {
+  background: #464646;
+}
+
+.container .bottom-side .todo-list {
+  margin-top: 1rem;
+  list-style: none;
+  width: 100%;
+  max-height: 130px;
+  overflow-y: scroll;
+}
+
+.container .bottom-side .todo-list li {
+  margin: 0.5rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #d7d7d7;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #464646;
+}
+
+.container .bottom-side .todo-list li a {
+  font-size: 1.5rem;
+  color: #3c3c3c;
+}
+
+.container-alert {
+  padding-bottom: 3rem;
+}
+/*# sourceMappingURL=main.css.map */

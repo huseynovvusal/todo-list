@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AASA,AAAA,WAAW,CAAC;EACV,UAAU,EAJL,OAAe;CAiBrB;;AAdD,AAGE,WAHS,CAGT,UAAU,CAAC;EACT,YAAY,EATH,OAAgB;CAkB1B;;AAbH,AAMI,WANO,CAGT,UAAU,CAGR,EAAE,CAAC;EACD,UAAU,EAhBR,IAAI;CAqBP;;AAZL,AASM,WATK,CAGT,UAAU,CAGR,EAAE,CAGA,CAAC,CAAC;EACA,KAAK,EAnBL,IAAI;CAoBL",
+    "sources": [
+        "light-mode.scss"
+    ],
+    "names": [],
+    "file": "light-mode.css"
+}

@@ -1,0 +1,27 @@
+$red-border: rgb(235, 16, 16);
+$red-o: rgba(235, 16, 16, 0.2);
+$green-border: rgb(26, 180, 72);
+$green-o: rgba(17, 200, 33, 0.2);
+
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30rem;
+  height: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.alert-danger {
+  border: 1px solid $red-border;
+  background: $red-o;
+  color: $red-border;
+}
+.alert-success {
+  border: 1px solid $green-border;
+  background: $green-o;
+  color: $green-border;
+}

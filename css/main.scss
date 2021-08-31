@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+//Colors
+
+$white: #fff;
+$border-color: rgb(245, 245, 245);
+$border-color-2: rgb(215, 215, 215);
+$border-color-3: rgba(64, 138, 92, 0.2);
+$dark-green: rgb(64, 138, 92);
+$dark-green-hover: rgb(54, 128, 82);
+$dark: rgb(60, 60, 60);
+$dark-hover: rgb(70, 70, 70);
+
+// extends
+
+%text-bar {
+  @extend %input;
+  width: 100%;
+  outline: none;
+  color: $dark-green;
+}
+
+%input {
+  padding: 0.5rem 1rem;
+  border: 1px solid $border-color-2;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: $white;
+  transition: 300ms;
+}
+
+.container {
+  position: relative;
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 1px solid $border-color;
+
+  @media (max-width: 525px) {
+    width: 100vw;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-color-3;
+
+    a {
+      color: $dark-green;
+      font-size: 1.2rem;
+
+      i {
+        transition: 300ms all ease-in-out;
+      }
+    }
+  }
+
+  h3 {
+    color: $dark-green;
+    font-size: 1.5rem;
+  }
+
+  .top-side {
+    margin-top: 2rem;
+    border-bottom: 1px solid $border-color-3;
+
+    .add-todo-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      input {
+        @extend %input;
+      }
+
+      input[type="text"] {
+        @extend %text-bar;
+      }
+
+      input[type="submit"] {
+        background: $dark-green;
+        color: $white;
+        margin: 1rem 0;
+
+        &:hover {
+          background: $dark-green-hover;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .bottom-side {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    input[type="text"] {
+      @extend %text-bar;
+    }
+
+    .delete-all {
+      @extend %input;
+      text-decoration: none;
+      background: $dark;
+      color: $white;
+      margin-top: 1rem;
+
+      &:hover {
+        background: $dark-hover;
+      }
+    }
+
+    .todo-list {
+      margin-top: 1rem;
+      list-style: none;
+      width: 100%;
+      max-height: 130px;
+      overflow-y: scroll;
+
+      li {
+        margin: 0.5rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $border-color-2;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        color: $dark-hover;
+
+        a {
+          font-size: 1.5rem;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+.container-alert {
+  padding-bottom: 3rem;
+}
